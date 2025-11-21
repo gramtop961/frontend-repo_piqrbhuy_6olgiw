@@ -1,5 +1,5 @@
 import React from 'react'
-import { Laptop, Monitor, Printer, Smartphone, Headphones, HardDrive, Keyboard, MousePointerClick, Cpu, Wrench } from 'lucide-react'
+import { Laptop, Monitor, Printer, Smartphone, Headphones, HardDrive, Keyboard, Cpu, Wrench } from 'lucide-react'
 
 const services = [
   { icon: Laptop, title: 'Laptops & Desktops', desc: 'Sales, setup, upgrades, and repairs for all brands.' },
@@ -27,7 +27,10 @@ const Services = () => {
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6 hover:bg-white/10 transition shadow-xl shadow-slate-900/30">
+            <div
+              key={title}
+              className="group rounded-2xl border border-white/10 bg-white/5 backdrop-blur p-6 hover:bg-white/10 transition-all duration-300 shadow-xl shadow-slate-900/30 hover:shadow-2xl hover:shadow-slate-900/40 will-change-transform"
+            >
               <div className="flex items-center gap-3">
                 <div className="p-2.5 rounded-xl bg-blue-500/20 text-blue-300 border border-blue-500/30">
                   <Icon className="w-6 h-6" />
